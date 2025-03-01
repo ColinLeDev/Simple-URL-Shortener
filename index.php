@@ -1,5 +1,5 @@
 <?php
-include("inc/bdd.php");
+include_once("inc/bdd.php");
 
 if (isset($_GET['site']) && !empty($_GET['site'])) { //url shortened
     /*  BDD plan

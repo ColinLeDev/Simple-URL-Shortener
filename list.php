@@ -6,7 +6,7 @@ if (!empty($_SESSION['username'])) {
 if (isset($_GET['UNKNOWN']) and ($_SESSION['admin'] == '1')) {
     $username = 'UNKNOWN';
 }
-include 'inc/bdd.php';
+include_once 'inc/bdd.php';
 header("Cache-Control: no-cache, must-revalidate");
 $root_url = $_SERVER['REQUEST_URI'];
 
